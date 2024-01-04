@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Kaushan+Script&family=Raleway:ital,wght@1,500&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+    overflow: hidden;
+}
+
+video{
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+}
+
+header{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    color: #160606;
+    text-align: center;
+}
+header h1{
+    font-weight: 500;
+    font-size: 1.75rem;
+    text-transform: uppercase;
+    line-height: 1;
+}
+
+header span{
+    font-weight: 800;
+    font-size: 7rem;
+    display: block;
+}
+
+.description{
+    position: absolute;
+    bottom: 2%;
+    width: 50%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: #424141;
+    color: #fff;
+    border-radius: 20px;
+    opacity: 0.7;
+    padding: 1.5rem;
+}
+
+.description p{
+    text-align: justify;
+    max-width: 42rem;
+    margin-inline: auto;
+    line-height: 1.5;
+}
+
+.copyright{
+    font-size: 0.65rem;
+}
+
+.copyright a{
+    color: #fff;
+    text-underline-offset: 1.8px;
+}
+
+@media screen and (max-width: 1200px) {
+    .description{
+        position: relative;
+        width: 91vw;
+        bottom: 0;
+        border-radius: 20px 20px 0 0;
+        margin: auto;
+        padding: 0.6rem 1.5rem;
+    }
+    
+}
+
+.dropbtn {
+    position: absolute;
+    margin-top: 30px;
+    margin-left: 10px;
+    z-index: 10;
+    background-color: #727171;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    border-radius: 16px;
+    opacity: 0.7;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 80px;
+    left: 10px;
+    background-color: #f1f1f1;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 14px;
+    opacity: 0.7;
+}
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+  
+.dropdown-content a:hover {background-color: #ddd;}
+.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropbtn {background-color: #5a5a5a;}
